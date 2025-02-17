@@ -35,5 +35,6 @@ func Migrate(db *gorm.DB) error {
 	db.AutoMigrate(structs.SpotifyToken{})
 	db.AutoMigrate(structs.SpotifyUser{})
 	db.AutoMigrate(structs.Session{})
+	db.AutoMigrate(structs.SpotifySongCache{})
 	return nil
 }
