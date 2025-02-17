@@ -1,9 +1,11 @@
-package mappier
+package main
 
 import (
-	"fmt"
+	"github.com/m-tsuru/mappier-backend/lib/db"
+	"github.com/m-tsuru/mappier-backend/lib/handler"
 )
 
 func main() {
-	fmt.Println("Hello World!")
+	db.Setup()
+	handler.Setup()
 }
