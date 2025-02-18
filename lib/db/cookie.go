@@ -67,6 +67,7 @@ func GetAccessTokenfromSessionId(db *gorm.DB, sessionId string) (*string, error)
 		if err != nil {
 			return nil, err
 		}
+		return at, nil
 	}
 	accessToken := token.AccessToken
 	return &accessToken, nil

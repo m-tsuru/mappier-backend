@@ -3,6 +3,7 @@ package auth
 import (
 	"bytes"
 	"context"
+	"encoding/base64"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -21,7 +22,6 @@ import (
 )
 
 func RefreshAccessToken(refreshToken string) (*string, *int, error) {
-	fmt.Println("refresh access token")
 	raw, err := ini.Load("config.ini")
 	if err != nil {
 		return nil, nil, err
@@ -35,6 +35,7 @@ func RefreshAccessToken(refreshToken string) (*string, *int, error) {
 	data.Set("", raw.Section("spotify").Key("CLIENT_ID").String())
 
 	basic := raw.Section("spotify").Key("CLIENT_ID").String() + ":" + raw.Section("spotify").Key("CLIENT_SECRET").String()
+	basic = base64.URLEncoding.EncodeToString([]byte(basic))
 
     req, err := http.NewRequest("POST", u, bytes.NewBufferString(data.Encode()))
     if err != nil {
@@ -57,7 +58,6 @@ func RefreshAccessToken(refreshToken string) (*string, *int, error) {
 	if err != nil {
 		return nil, nil, fmt.Errorf("unable to get access token (refreshed) from spotify: %w", err)
 	}
-	fmt.Println(body)
 
 	var result structs.SpotifyRefreshingToken
 
