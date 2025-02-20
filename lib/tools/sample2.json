@@ -1,0 +1,86 @@
+{
+    "ResultInfo" : {
+      "Count" : 1,
+      "Total" : 1,
+      "Start" : 1,
+      "Status" : 200,
+      "Description" : "",
+      "Copyright" : "",
+      "Latency" : 0.095
+    },
+    "Feature" : [ {
+      "Id" : "1049504",
+      "Gid" : "OXueRQHYUMQ",
+      "Name" : "\u30D5\u30A1\u30DF\u30EA\u30FC\u30DE\u30FC\u30C8\u5E83\u5CF6\u6A2A\u5DDD\u99C5\u5317\u53E3\u5E97",
+      "Geometry" : {
+        "Type" : "point",
+        "Coordinates" : "132.4503081,34.4111526"
+      },
+      "Category" : [ "\u30D5\u30A1\u30DF\u30EA\u30FC\u30DE\u30FC\u30C8" ],
+      "Description" : "",
+      "Style" : [ ],
+      "Property" : {
+        "Uid" : "dbf1d3d741bdbc6e555629b2633d9773b8327439",
+        "CassetteId" : "4f20d833838a6e5eb70e55811ae36a2f",
+        "Yomi" : "\u30D5\u30A1\u30DF\u30EA\u30FC\u30DE\u30FC\u30C8\u30D2\u30ED\u30B7\u30DE\u30E8\u30B3\u30AC\u30EF\u30A8\u30AD\u30AD\u30BF\u30B0\u30C1\u30C6\u30F3",
+        "Country" : {
+          "Code" : "JP",
+          "Name" : "\u65E5\u672C"
+        },
+        "Address" : "\u5E83\u5CF6\u770C\u5E83\u5CF6\u5E02\u897F\u533A\u6253\u8D8A\u753A11-1",
+        "GovernmentCode" : "34104",
+        "AddressMatchingLevel" : "6",
+        "LandmarkCode" : "10801100000",
+        "Tel1" : "082-509-4580",
+        "Genre" : [ {
+          "Code" : "0205001",
+          "Name" : "\u30B3\u30F3\u30D3\u30CB"
+        } ],
+        "Area" : [ {
+          "Code" : "000074",
+          "Name" : "\u5E83\u5CF6\u30FB\u5BAE\u5CF6"
+        } ],
+        "Station" : [ {
+          "Id" : "27437",
+          "SubId" : "2743701",
+          "Name" : "\u6A2A\u5DDD(\u5E83\u5CF6\u770C)",
+          "Railway" : "JR\u5728\u6765\u7DDA",
+          "Exit" : "\u5317\u53E3",
+          "ExitId" : "13796",
+          "Distance" : "62",
+          "Time" : "0",
+          "Geometry" : {
+            "Type" : "point",
+            "Coordinates" : "132.450453,34.410630"
+          }
+        }, {
+          "Id" : "29374",
+          "SubId" : "2937401",
+          "Name" : "\u6A2A\u5DDD\u99C5",
+          "Railway" : "\u5E83\u5CF6\u96FB\u9244",
+          "Exit" : "\u51FA\u53E3",
+          "ExitId" : "16928",
+          "Distance" : "267",
+          "Time" : "3",
+          "Geometry" : {
+            "Type" : "point",
+            "Coordinates" : "132.450536,34.409630"
+          }
+        }, {
+          "Id" : "27438",
+          "SubId" : "2743801",
+          "Name" : "\u6A2A\u5DDD\u4E00\u4E01\u76EE",
+          "Railway" : "\u5E83\u5CF6\u96FB\u9244",
+          "Exit" : "\u51FA\u53E3",
+          "ExitId" : "13797",
+          "Distance" : "566",
+          "Time" : "7",
+          "Geometry" : {
+            "Type" : "point",
+            "Coordinates" : "132.449924,34.407131"
+          }
+        } ],
+        "SmartPhoneCouponFlag" : "false"
+      }
+    } ]
+  }

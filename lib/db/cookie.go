@@ -33,11 +33,15 @@ func SaveSessionId(db *gorm.DB, userId string, sessionId string, expiredAt time.
 func GetUserfromSessionId(db *gorm.DB, sessionId string) (*string, error) {
 	var rawResult structs.Session
 	err := db.Where("session_key = ?", sessionId).Last(&rawResult).Error
+	if errors.Is(err, gorm.ErrRecordNotFound) {
+		return nil, fmt.Errorf("not logged in")
+	}
 	if err != nil {
 		return nil, err
 	}
+
 	if rawResult.ExpiredAt.Before(time.Now()) {
-		return nil, fmt.Errorf("maybe cookie is expired")
+		return nil, fmt.Errorf("not logged in")
 	}
 	userId := rawResult.ID
 	return &userId, nil

@@ -112,7 +112,10 @@ func HandleAuthCallback(c *fiber.Ctx) error {
 
 	c.Cookie(cookie)
 
-	return c.Status(200).JSON(
+	c.Status(fiber.StatusSeeOther)
+    c.Redirect("/app/v1")
+
+	return c.JSON(
 		Message{
 			Message: "Logged In Successfully",
 		},

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+  width: 90%;
+  max-width: 24rem;
+  height: calc(100vh - 4rem);
+  padding: 2rem;
+  margin: auto;
+
+  background-color: #eeeeee;
+}
+
+h1 {
+    display: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_wrapper {
+    position: relative;
+}
+
+nav > select {
+    color: black;
+
+    display: block;
+    margin: 0 auto;
+
+    background-color: #ffffff00;
+    font-size: 1.5rem;
+    border: 0px;
+
+    text-align: center;
+}
+
+nav > select::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+
+    bottom: -15px;
+
+    width: 60px;
+    height: 5px;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.no-decorate {
+    text-decoration: none;
+    color: black;
+}
+
+.section {
+    max-height: 8rem;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.player:hover {
+    border: #aaa solid 1px;
+}
+
+.player-detail {
+    margin-left: 16px;
+}
+
+.position-detail {
+    display: flex;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    padding: 8px;
+
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.position-detail:hover {
+    border: #aaa solid 1px;
+}
+
+.selected-position {
+    background-color: rgb(209, 238, 204);
+    border: rgb(36, 144, 19) solid 1px;
+}
+
+#title {
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+}
+
+#artist {
+    font-size: 1rem;
+    color: gray;
+    text-overflow: ellipsis;
+}
+
+#album {
+    font-size: 1rem;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#place-1, #place-2, #place-3 {
+    font-size: 1.2rem;
+    color: black;
+    text-overflow: ellipsis;
+}
+
+#area-1, #area-2, #area-3{
+    font-size: 1rem;
+    color: gray;
+    text-overflow: ellipsis;
+}
+
+#coords-1, #coords-2, #coords-3 {
+    font-size: 1rem;
+    color: gray;
+    text-overflow: ellipsis;
+}
+
+.exec-btn {
+    background-color: #ffdbbe;
+    border: 1px orange solid;
+    padding: 8px;
+    border-radius: 8px;
+}
+.w-100-btn {
+    background-color: #ffdbbe;
+    border: 1px orange solid;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.error {
+    color: whitesmoke;
+
+    position: fixed;
+    z-index: 9999;
+    background-color: #666a;
+
+    width: 400px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.non-display {
+    display: none;
+}
+
+.muted {
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
